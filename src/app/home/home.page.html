@@ -1,0 +1,58 @@
+<ion-content [fullscreen]="true">
+  <h1 class="title">Beatiful Charts</h1>
+
+  <div class="box box1">
+    <div class="details">
+      <h1>1,213</h1>
+      <h2>Clicks</h2>
+    </div>
+
+    <apx-chart
+      [chart]="options.chart"
+      [series]="options.series"
+      [stroke]="options.stroke"
+      [markers]="options.markers"
+      [grid]="options.grid"
+      [tooltip]="options.tooltip"
+      [colors]="options.colors"
+    ></apx-chart>
+  </div>
+
+  <div class="box box2">
+    <apx-chart
+      [chart]="barOptions.chart"
+      [series]="barOptions.series"
+      [labels]="barOptions.labels"
+      [grid]="barOptions.grid"
+      [xaxis]="barOptions.xaxis"
+      [yaxis]="barOptions.yaxis"
+      [title]="barOptions.title"
+      [legend]="barOptions.legend"
+      [dataLabels]="barOptions.dataLabels"
+    ></apx-chart>
+  </div>
+
+  <div class="box box3">
+    <apx-chart
+      [chart]="areaOptions.chart"
+      [series]="areaOptions.series"
+      [stroke]="areaOptions.stroke"
+      [xaxis]="areaOptions.xaxis"
+      [title]="areaOptions.title"
+      [subtitle]="areaOptions.subtitle"
+      [fill]="areaOptions.fill"
+      [tooltip]="areaOptions.tooltip"
+      [colors]="areaOptions.colors"
+    ></apx-chart>
+  </div>
+
+  <div class="box box4">
+    <apx-chart
+      [chart]="radial.chart"
+      [series]="radial.series"
+      [plotOptions]="radial.plotOptions"
+      [fill]="radial.fill"
+      [labels]="radial.labels"
+    ></apx-chart>
+  </div>
+</ion-content>
